@@ -31,7 +31,7 @@ public class JwtService {
     }
 
     public String generateToken(final User user) {
-        return buildToken(user, refreshExpiration);
+        return buildToken(user, jwtExpiration);
     }
 
     public String generateRefreshToken(final User user) {
